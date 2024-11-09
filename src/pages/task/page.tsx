@@ -10,6 +10,8 @@ export default function Tasks(): JSX.Element {
     const components: Array<JSX.Element> = [];
 
     const getData = async() => {
+        console.log("data");
+        
         const q = query(collection(db, "tasks"));
         const querySnapshot = await getDocs(q);
 
